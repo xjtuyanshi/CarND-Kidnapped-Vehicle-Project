@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "C:/Users/shi_y/Documents/GitHub/Udacity/CarND-Kidnapped-Vehicle-Project/build_x86/CMakeFiles/particle_filter.dir/embed.manifest"

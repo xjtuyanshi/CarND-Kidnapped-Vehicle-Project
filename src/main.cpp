@@ -36,7 +36,14 @@ int main() {
   double sigma_pos [3] = {0.3, 0.3, 0.01};
   // Landmark measurement uncertainty [x [m], y [m]]
   double sigma_landmark [2] = {0.3, 0.3};
-
+  std::ifstream file("map_data.txt");
+  std::string str;
+  std::string file_contents;
+  while (std::getline(file, str))
+  {
+	  file_contents += str;
+	  file_contents.push_back('\n');
+  }
   // Read map data
   Map map;
   if (!read_map_data("../data/map_data.txt", map)) {
@@ -163,7 +170,7 @@ int main() {
   });
 
   int port = 4567;
-  if (h.listen(port)) {
+  if (h.listen("127.0.0.1", port)) {
     std::cout << "Listening to port " << port << std::endl;
   } else {
     std::cerr << "Failed to listen to port" << std::endl;
