@@ -10,6 +10,12 @@ The most practical way to initialize our particles and generate real time output
 	* Data Associations -Associate  the nearest matched observed coordinate with map landmarks `ParticleFilter::dataAssociation`
 	* Calculate the particle's final weight		
 4.  Resample `ParticleFilter::resample()`
+
+[//]: # (Image References)
+
+
+[image1]: ./results_screenshot.png "result screenshot"
+
 ## Running the Code
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
 
@@ -32,3 +38,4 @@ Alternatively some scripts have been included to streamline this process, these 
 The particle filter successfully passes the current grading code in the simulator.
 1. **Accuracy**: error: x: .116, y: .108, yaw: .004
 2. **Performance**:  69.28 sec
+![alt text][image1]
