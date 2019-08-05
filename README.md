@@ -12,9 +12,7 @@ The most practical way to initialize our particles and generate real time output
 4.  Resample `ParticleFilter::resample()`
 
 [//]: # (Image References)
-
-
-[image1]: ./results_screenshot.png "result screenshot"
+[image1]: results_screenshot.PNG  "result screenshot"
 
 ## Running the Code
 This project involves the Term 2 Simulator which can be downloaded [here](https://github.com/udacity/self-driving-car-sim/releases)
